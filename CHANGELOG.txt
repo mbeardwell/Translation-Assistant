@@ -1,0 +1,7 @@
+# Changelog
+
+## 08-03-2023
+
+
+- Fixed memory leak where QWebEngineView's weren't being deleted each time when a new search was made
+- Added button toggle additional web views

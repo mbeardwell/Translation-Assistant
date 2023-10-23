@@ -1,0 +1,8 @@
+look up ipa more reliably
+	- eg. use fr_FR.txt
+	- better inspect web requests
+	- better website for ipa?
+add refresh button
+double app width
+	- add 3/4 new websites
+	- include the official french dictionary that looks old and fancy
