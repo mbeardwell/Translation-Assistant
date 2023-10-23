@@ -2,7 +2,7 @@
 import json
 import sys
 import os
-import system
+import sys
 from urllib.parse import quote
 
 from PyQt5.QtCore import *
@@ -118,7 +118,7 @@ class TranslationSearchbar(QWidget):
 
 
 class Translator(QWidget):
-    SUPPORTED_LANGS = ["de", "fr", "nl", "it"]
+    SUPPORTED_LANGS = ["en", "de", "fr", "nl", "it"]
 
     def __init__(self):
         super().__init__()
@@ -154,9 +154,9 @@ class Translator(QWidget):
                                                        fragment="Français",
                                                        searchbar_obj=self.searchbar))
         self.pages.append(TranslationPageElement("deepl", 45, "js/deepl.js",
-                                                 get_url_deepl("fr")))
+                                                 self.get_url_deepl("fr")))
         self.pages.append(TranslationPageElement("reverso", 45, "js/reverso.js",
-                                                 get_url_reverso("fr")))
+                                                 self.get_url_reverso("fr")))
 
         for p in self.pages:
             self.webpages_layout.addWidget(p.webengine_view, p.window_height)
@@ -166,10 +166,10 @@ class Translator(QWidget):
 
         self.height, self.width = self.DEFAULT_WIDTH, self.DEFAULT_HEIGHT
 
-    def check_supported(lang):
+    def check_supported(self, lang):
         if lang not in Translator.SUPPORTED_LANGS:
             print("Unsupported language -",lang)
-            system.exit(1)
+            sys.exit(1)
 
     def get_url_wikt(self, lang):
         self.check_supported(lang)
