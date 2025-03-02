@@ -9,6 +9,10 @@ from PyQt5.QtCore import *
 from PyQt5.QtWebEngineWidgets import *
 from PyQt5.QtWidgets import *
 
+# Apply Linux-only fixes
+if sys.platform.startswith("linux"):
+    os.environ["QT_QPA_PLATFORM"] = "xcb" # Forces X11 (fixes Wayland/Chromebook)
+
 def read_source(relative_source_path):
     proj_root = os.path.dirname(os.path.abspath(__file__))
     abs_source_path = proj_root + "/" + relative_source_path
