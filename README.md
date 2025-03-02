@@ -1,14 +1,12 @@
-# Translation Assistant
+# French Translation Assistant
 
-_A lightweight word translation tool with a graphical user interface (GUI)._
+_A lightweight French-to-English word translation tool with a graphical user interface (GUI)._
 
 ## **Overview**
-**CURRENTLY THIS TOOL ONLY SUPPORTS FRENCH TO ENGLISH TRANSLATIONS.**
 
-Translation Assistant is a simple yet effective translation tool that provides translations for a word from multiple different sources.
+A simple yet effective translation tool that provides translations for a word from multiple different sources.
 
 ## **Features**
-* Supports multiple languages.
 * Simple and intuitive GUI.
 * Uses authoritative sources for accurate translations.
 
@@ -18,8 +16,8 @@ Ensure you have **Python 3.7+** installed.
 
 1. Clone the repository
 ```bash
-git clone https://github.com/mbeardwell/translation-assistant.git
-cd translation-assistant
+git clone https://github.com/mbeardwell/french-translation-assistant.git
+cd french-translation-assistant
 ```
 
 2. Install dependencies
