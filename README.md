@@ -3,6 +3,8 @@
 _A lightweight word translation tool with a graphical user interface (GUI)._
 
 ## **Overview**
+**CURRENTLY THIS TOOL ONLY SUPPORTS FRENCH TO ENGLISH TRANSLATIONS ON WINDOWS.**
+
 Translation Assistant is a simple yet effective translation tool that provides translations for a word from multiple different sources.
 
 ## **Features**
